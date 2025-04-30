@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page -->
+    <title>Новая вкладка</title>
+    <meta name="description" content="Новая вкладка">
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Scripts -->
+    <link href="style.css" rel="stylesheet">
+    <script src="addfavs.js"></script>
+</head>
+
+<body>
+
+    <div class="window" id="window">
+
+        <div class="window-title">
+            <h1 class="title">Новая вкладка</h1>
+            <img class="buttons" src="assets/window-buttons.svg" height="36px" draggable="false">
+        </div>
+
+        <div class="window-content" id="window-content">
+            <!-- <div class="window-subcontent" aria-labelledby="Socials">
+                <p>Соц. сети</p>
+                <a href="https://www.youtube.com/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhUlEQVQ4ja3Tv2pUQRTH8c+Ze9e4CAGNlSSa2CmCGE0hgm/gA9j5BlY+RawFGwtbH0IkiGCwEMQ2aFIFokGUGHfvjMXcTTapZPHAMH84Z+bM+f5OQCGQ1HnKbvf7D+XkuYIclEnwTFaIqIsbS5xZI1+gOUceoiWa3rXDmHRA94v0jT+b4dN2FKsPSC9wsTqnOkXURI8ynlieLPbIj6JYfUNzn25EpN67MKpJpIZ8FBR1lEwzoNtIlKt0mdJQEhq61sqV1mAwkH8MpNQS7bFPaWpMLCfSQn251kOK4Gd4/DC8fs7dO+T94DBIcfy/SJSFhLPH/4uY3GPcce8mGy959YzlRYyImKY2TLMinFiL3xj21S5KqS+0DW8/8mSdd+/7ROcoeRrJQRS3tolLtfgRtdAdK0vs7IbRPmm+yGUKYZnob6cltmgWT2Jsiq0vPcb5KYzRY9RjHG+1WKdcI50SUtsr3qkWyapCyx7xtJfy9cvMrZHO4x+kHN853Ayfv/6vZpq9nf8CnF2KWbg2p58AAAAASUVORK5CYII=" alt="YouTube">
+                    </div>
+                </a>
+                <a href="https://vk.com/feed/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACSklEQVQ4jW3TO4idVRQF4G+f++feSYYZmTuo0UDEt/FRKEKaEBQjmgGLgIWFldiJEElAxspuEAIWIvhoxM5CIwppJGLpiIx2BtHGJASCGRITx7mP/2yL/8YguosDZ8Pa7LXWXgFWc7/iddXjqmWpj55/VyuMFZcU36veshbr4XjuN3BKGJog+ef9b4XADqRNIytF4w1haGwUocZ1cBBFRAfpWiEjVGMjYaix2uBRrarq52S2eE9IciLF7B/kVKpCo2+qCo8VadlULAx4ZI+8ZQGt7IV88Faxd0lIqZV7l3jodhllpkg1LCX0jThwBz8c49hB4ZpY2im+O8q7R7AlbhqI9VfFRy8Qk46iNCiZegoX/hA9We5ZlnpkMugxbTHhnSPsXkxrp0WdiNIp02sy0XDmkjx3OTxxl5hfZDRl1HL/zZw6yqH7eO3z8NmP2CXrzKcCpWH7Kh9vMJznzacZjdkas283h/dxdcTGeVQibvhaoFYMxNtf89NFefxJvniJQcNXZ3j+Qy5v880r6fDD5J/i+pBOz45G/v6XfO4Dcfpnnn2AxblOrE+/5Zn3uLYdvnxZ3rYssxOybYRRx4ro8+umPPQ+B+7k4N3i3BV6y/KXi7z4CU/dy9I8F64QYRxW8zdpj9pdXASZs7GtVDDXrZzb0hRz2CFxvkgbGgVjZM6yUHbKZkGUXZ3jmbLM0VuUesYzzEYxtSZt6hsIZXYiamXaylpvBKsSbVX0DaRNU2vFiVhXrUgnFWeFLbT/k8QWW4qz0knVihOx/jfcl+nx3ZngjQAAAABJRU5ErkJggg==" alt="ВКонтакте">
+                    </div>
+                </a>
+                <a href="https://ru.pinterest.com/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADNUlEQVQ4jU2TT2ibdRzGP99f3vxtTGuzbC21bZp2tTqZY4i1OOffg4I6vUwvnkQ8CAM9efHgGHrUug3ZwUlVBqIbCNKDY0pl4A4KonZsutm1SZMl7+i/JG2S9/39vh5cxef8fJ7Lw0cAFERAAUoMT8WQ1wTzcCAmDxhPddGgPwa4mX5uzP2fEW5nnly6n9R7VrzXoxKJtV2HkI4CRIhKwsSx6gJRe6rIwtv3QxNAFOQyua6ddH1zh8SeWNG2czSciWVNJN8viGCXquq2fCckTVaSpq6d72s0D92L3wRghZGPWoxribtalczdtv7+SWf9VedU1amqXdtwjZMzrtK3zxYZaLUZ1xr5aQApM/hIlOgPoYRKd9L0zp6R2NR+2fz6WzpzP4NC/NlHST79OOHla3rrycPKTd95EnctbR+kSv7TVRnXItmg8cEnzqmq/9RLbokuVyLnSnS7Ej1u7c2jTlW18fEXrkg2WJNxrZE/TY3Rv6oMu3Jiwtr1umucOuMWSWnzy1lt/fK7lvsf0BKDWmJI279dcbbecOXMXltlyFUZ/dOEIvmQENO3QySTltbsd8QnJjV5+Bli++/DDOy6fVpLw1//QNJdEhnMSUiAFRk2qDowuNUNsE4llYSwA84RXLmOnb+OSOLfjVQSAG20AAOKMR66GJU4dr2iW5+do+vVV7BrdUGEztwl7FYF1Tak7pTYwUnCq3+rLS2rRwwPd8MzmIue6u6ApF1/451I9MA9xB/cpyIi0b0TGunpQ0JL94ljRHJZ2XjrqKptuJjp9Tquc5Ei+UmfQvsmhaBsxuwSUVd/90PrwlA7CyUN/VUNV9ZVVXXj2LRbpt9WZDTwKYQ1hg4IQI2R6W4iR24JbWQzmj3/lUSGB/CnniP18ouYnTlas+cJfrqkSjrYgYlvYo/3snAEBZknl/Zl7MIWI1r2dlu7uhE0Zs7aIhlXIueK9NoSu4KKjNkWY+qTvzBPLq0gRkD34DfKWn9+i+BEoifjTCLhBZ+fM0aSRKK9xCJZkzYZz1MXbmKP12ge2oPf2DYYhf+s9B964bHm2dmZqhSuLTMSlim0fQpXa+RPlxie2u5tM/8APomzc0PzNmoAAAAASUVORK5CYII=" alt="Pinterest">
+                    </div>
+                </a>
+                <a href="https://music.youtube.com/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jaXTMWjVZxSG8d/5/N/kltwGK5IITaoQpyAI4qjFTHZySqlbA4Xo0g6ls+BYyGRBVCgVasFCHXRzilQHBym0tJkqFRKoiaCt3uBNbvodhytoQae804GXZzrPG5BEkIP74AzNHPmhKJMg6zLxM1uXw6+LrzPhZdJ0h/YC5TOlNOom+i/bFmWIWreo39L7Kix1IZJgeoT2DVozbFbWq87YDhPjA35lle7af4wUhgr9RXonWFpvgkzthQHc2xSlZf7TxtT76dG/ZLJ7lL/+blz6KWVvk/YMFoLTkQ4dJW6JTC3h7OfFH/fTD9dDPkdDe4TZj9KB/eHMN1VfygjyWMG8aIrsprnZ8Pv9dOW7sH+Kzh4UNoIr34ff/kxzH4fspmgK5guOyI3UGSv27Qk/3gzlHb44yeJFjh4mn2InV2+GfWOhM1bkRuJIoUzSDxPj4fHTtPWM2tDrc3iaW5e5dp6pD6iPebKeJsaDflAmi7cl3tr8Lw11mdZeK6tp12jRvEt9wnCLe0t8+TW376JN2cV7I2FltdJCXS64I4ZDd6168DB9cjzV55y7yswpbt8jRvEPJ4+nB2upu1bFcODOtt8YA40PXaB16pVIs/EGkWIgUu3THqJ/Mfxyetsqb39M253zC0mh/QZEI3NuAAAAAElFTkSuQmCC" alt="YT Music">
+                    </div>
+                </a>
+            </div>
+
+            <div class="window-subcontent" aria-labelledby="Services">
+                <p>Сервисы</p>
+                <a href="https://mail.google.com/mail/u/0/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACEUlEQVQ4jcWSP0iVYRTGf+d9v/d6/ZelXBCSIHJIKbHCq1DkkIVubVK0NCSI0ODWdpcagigShDRoawhqygZz0BAxrU2I6ApCDsGnpl3Fe73f956GTDS4jfUsz/L84Twc+N8QgJmGhlqXsB3bxs1fzGbDvxn0Dan4kG3b2oxna7pZMxkwmrAjzpgx54uTn86c7Cxlzt2r74zKgklrZawiCEY0gzHpxkZn4sLpvCpWpLkyWTa2ejk9qBnMXmsGE17oGNSlmrHA0UweAo1bSOOC+ze+yLV3t+LWpXEi9WCk0ok8WJluS3+74m4DrEwXH7sEvd4bfOQxIozvNESvF68SADy/NMRi9hXdM3exPqLgE5SJ6c1HOy0AZdY25b2nAk9OHUNbLbzMHWOzMYspr0Wtxsw2X+dpzzMNq46GSTx57wmMaQqMacp7T9IIXzUZDqyf1xfbJwh2D9wlxUUFluvP8jD9qJ9iftiJoIACTgSJo+E7rcf7F6I6khLvDWv2r+w0ks9VjavVUwsDEdonsCGwEaF91VMfB7L1wWpCVPZ7DgQAlPuCBUhNzI/GQlcsdKUm5kcByiPsn/rgN4sYQFEf7zWk3s59OKD2XnAWRND4l9e0r1FUZM7jQ68+tNYWSj2SGFMg9iHqQ7zOZXvai0EmI/7cE71Z94MjAMtbrJcK2LTy/nAQnwIo5FLfkYwvpf13+AmqpdgP1oFy7QAAAABJRU5ErkJggg==" alt="Gmail">
+                    </div>
+                </a>
+                <a href="https://drive.google.com/drive/u/0/my-drive/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACtklEQVQ4jZ1TTWhUVxT+zjn33TczeTNm8rMwMgzUhVWKjotutAGlVhRKKW0tgnEhrtwKapGALy76Q7sRXNlNq4tKbAvRnSB1U6EtSKWlUGml2FaCzSKZZJz33n33HhdJNNCsPMtzvj84fMD/h9bZAQB0nZtZh6zbvjjwei93h0PmCACqFdaLAw+u0sTDW6uY9dwIALZNv9lKotov891uwy32sQCLt+vzuDR0t/u467dvPIKHK2AFAH5GT5eVqxSfJ+HGANuszHyRZEVx1vyeifGN4SqmCNAVLJ4LpGCkCJ1v3tktRibKXuFja2KXNOyJxiO7Oe5WskV4I5jQGeymFEHTZe7zBAqKAn8EQAAEFdGkWZs9PvTPLASBgEAEKQM+Vl2bYMV959fvHeVYxn1elgDIVIW7Uj81utifQg1MBHIZSmPxmp/B0dUUBIBemt7XGOLBe0TUCoX3bCWC6s8//frKq/oopfIgfmRGp8zhTAQB8Dc77MD76DIAbfLwSYltOxQ+ACwkjCA4gzQt6RKcIXwAYSggrkDgGG0YnCRAafv0W1ti0TvqaRBBPVclKotw9e6hmSNIp8whANfSc0G/3XAFlaXDRR/OsAoM5jnoLmp9+MM4u+S74BwRASxE7UrrvuXGgkcQA0WPbNhcPKhf+O3dLcF5VQJiYTW2v1e6tz7/N+4MdIg2bs2WYt+kUW5Wk5EAbGLQWICMVdVt+iMaGRmc7aPz1+3AbkzcnF5v3Lj3KQPkOZ6bBHp5xXoeTdS7su98/qT0rl+GolfmRVY28yfuy5eP+f+GWmx4Ic/rOgmQCqC89P3g43jXmag9OrwnsZYhViSKmSPLHFmmqMIxk8zVahxV2jT+5+XP6rfvf6VYfiMAJYB0/yfuDaehCYVnXtsTjxBEQYXknMzfOU03FSBaU6oXnqcPZiRKuF2x1gAAAABJRU5ErkJggg==" alt="G Drive">
+                    </div>
+                </a>
+                <a href="https://www.perplexity.ai/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACXklEQVQ4jaWTv0tbURTHP3nvBeKDyMtiFUKUkMTEimPjWE0yVZqxVlMUx+KkDnVpECxWRALSJbVpB61YO2n/AEEQ7CRIUofXoUmHSDJoE4gk7/leh/zQ0C6lBy7cc889X873nPMFOAA0wPzHozVyqTUfZVk27XZ765PT6TSdTmfLt9vtpizLd0FqAmClYX5/P4nEOl6vB4BIJEwkEgbA4/GQSKzj9/dzx6zCXU+SrLjdbubn5xgeDiKKAqIoEgwGWViYw+12I0lW2nKaF0EQkOUOTk9P2d7+SCw2SW9vLwCBgJ9k8i2x2CSy3IEgCBiGAYAFMCVJYnHxBYOD9+ns7OT8/Jyuri6i0SgA+/v7FAoFAoEApVKJdDrDysprdF2vVyCKIi6Xi42NN6iqiqIozMxMk06nsVigWCySSn2gUCjg8/mYnp5CFMVbAABNq5HP5zFNg6mpZ6jqd3K5n42Yxuzsc9bW1snn82hardWDVhMNw6S7+x7x+EsymW+kUu+pVqtUq1U2N99xfHzM6uoKfX19Lf5tADabjbGxR4CF3d1PADgcCg6HA4CdnV0uLi4Ih0PYbB3tU9B1naOjI0ZGHlIqlTFNk2j0MRMTTwFQVZWDgy/c3NzQ09PD4eEhuq7fTqGJFgw+YHz8CZlMhqGhIa6ufgEmiqJwdnbGwMAAe3ufOTn5+ieFeh8MRkdH8fl8xONLZLM/yGazxONLeL0+QqFQG/+2RQKoVK7Z2toimdykXC5jNmq7vLxkefkVxWKRSuW6DcDSEJO1vsp1vCY/l8sFQC6X42/xhiL/T86/AeHvCrGafE8nAAAAAElFTkSuQmCC" alt="Perplexity - AI">
+                    </div>
+                </a>
+                <a href="https://rutracker.org/forum/index.php">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACtElEQVQ4jY2TS2iUZxSGn/P9/8yfSWbMkHhJo4nxAkm91hYK0lAGqhZcCFkEceEFM3QhXjYtqAsjLiJoC9UW22ajYLpqQYsILgxM8RI0pl14Q9FxtF4S09EZJ2Scyfzf6SImHePGb3new3u+877nFd7jPWiKVTiu9+WY9RMLkuez5Zh5HwLjeusEeyTomJapmDu1oLGYS7IqQtD6j4rGMYFiTNGDisxF9TPgSnm/TCV41Ly6Xkp0q0idgiOwEAi/gW9Y7Kame+f/focg9HjHnLxXqtIZP93N1a35OhOmq+yH2TAj6RHCTUAK5LRVPTtXnEuTGviDoysDD4t/yJP4lgPx6t8jo/SNT1DSXs2peOOx49WSvQrMB91pDJtSpXzofwIxeWB+4Jn+/O226u/S1SYlCtM09+/J2rbMtcjyr36Z2XFxtg5ej0pmb4Mmd85LJTKTIjpWIyo4gCFrI9GcVr72IPLK9iU+XNMwW4cafq1dv3YoMOuHpFP126n6L/xFKwiPa3C5o8b1OC7KOivoyhuFoxc2P29OtTiZb+Izev/p7d7oBF5+DmBVXgj6AKEkaFKC/R1LrGinIG2AAxAq6MWKon/veWNgGW7OLN/XeSn8oiauol6ZYWlBd0mgf+uPCO0g08sPSwVEAZSS9/r0p7u/t47jt004p3C47+O63WYsMn2PiImBbAfuT/qrALykKn9Ho9n6pxtO/iWFUPoNXDRCgv1iXVoO5YpwG7gd7I8/VdEeICxw1vEKXUs7u1qtlY/cQuUq9fLRiQtWq7VMzUKxMtiLyABwS3B25Zf2XHaH6pqDhYoNRvxWYBB4BhgRWdXers7bWVh8bISBrSdEGC180j2+TjRjUB4DXa7KOeuWAr7vtoKtH2Y49E6Yxl419jB8U8u0SFjlRN+ZD/4sa7s7IfN/rakOrMarPYgAAAAASUVORK5CYII=" alt="RuTracker">
+                    </div>
+                </a>
+                <a href="https://freesound.org/">
+                    <div class="button fav">
+                        <img src="https://freesound.org/favicon-32x32.png">
+                    </div>
+                </a>
+                <a href="https://filegarden.com/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC4ElEQVQ4jXWSS4yNWRSF1z7n/M+rHjqKCVoLBh5VEYIBUiKdeEykOlUSihh5DLSUdFVF4vGHiCsStLQIPaBIpLlq0G1ixgQRiniUIKEHTTVhUM97/8c5ZxvUvUIqvtEe7LWSvdcilJlxaufkXE3wSLjOM6PN0Seb8jcAEKKIEEUW34G+TFsXOA3Lfu4RjpoHbYy23P50c/4kAJ7d9etU5VatM4l517sl3/21gQAARBA415NZxnkigkm1kUocr7/UMav+QucOT4176FXnfpfWLgcAXG2WFQMJAFFjRHV1dYKd9GGxOpjrTxo/Rw+VzhPgqtA/Y4uJb1NtNOtdH/++24fCcwLA355QpjHa4g/W/7Q3Gx6+I5j+ADBN5QLScXLqcWt+V1nDX35wM4rUJCetN0z+p4H0zYpjx94DQENX+3rheX/ZVCdCydM1r253NqLRzu7tpZZCwVQMVA3i69rKldYyTah2/7+xr231qkMnesnSVFibxbBLX27IPwCAW7g1NoVH0R5OtWYGWAkhPN99+mOKiyumxKrkiN8uv+E1gRvsKenMhq6DkST9Z/6BI12VU0RmjCEiFkTsOQoTq6rmjQBNEBwaSbUjgmb9EIbraoOwaZznN3nKufA46pgMgLm5WSoGSBDBVVLGRXv2v+zTvxNBL3xtP8TSfJCU3Ovr728rac0gJgVhIU0MAFQoGLq/v0MHjitLxWz7wuYSQTprObGKYhMiydjkfEgXQ2AmMDEEYFLUCKWgk+SKCj1PDvXH2xZv0BPAwWGMaBAEoAhwHUgLQJfTZgYMIKwFpxkcKZepwYGkddH6bDqMezAeLGbMIADElZKUU2cwCAQQMSybIHS8VJtuteSXdCaMPFAaLmkAcnSr0jAiYNSSQKPtYdZhbeBxkl7rez2wifj2bk4SbSwzVcT4WvwtJsh5irW5Ru/ebqSWQioyy38KSWMqPUbMsK4jpNa2+3XPi1ZqKaQM0Gdwg1fc68ELuwAAAABJRU5ErkJggg==" alt="File Garden">
+                    </div>
+                </a>
+            </div>
+            
+            <div class="window-subcontent" aria-labelledby="Tools">
+                <p>Инструменты</p>
+                <a href="https://www.deepl.com/ru/translator/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACsklEQVQ4jW2TT0hUURTGv3PvnffeDNMUotjYTJlZmlEtWilRJBliS10VtAzJoHZBJbipRX8koiCqRRSBLVoVCGYhLdJF2aIg/+BkNTil9ofSnPfevfe0cKypPKsL53w/7vn4jsTfRQAEAAaA+OZ9R9yyqu3BbGa40BdYRoCipgWAVVtbdklJnVqbvcwMYn7KbE98f9M/VJiVAMy/AEQ37Eo7Xux03s8f9gONeMwzUggCCcGwYPDNcM4/m3/39C2KSACAeF1Te8Rx7wZG795SXcmtLbvtWOa9CI0mIcgCICK1Q0bUAae06uvSWgVAteuVlTwQQpYH/kJwq/uU7DjUKn7M/8Sj3gGoqLe0e0hCJADe6c/Yy8A3vQhI1Tiu67QT0YpQa+G5LvlhiHSynBrqd9Dw61G2lhGGWhAJBnjGd92r+J7VBQ8qvUTdxjEikbbWmlCHkkggoiQOtTajrWUPKspLcfPeQ3Pxeo9MxKMfvr4a3QRM5he/lkoSEREzg4hICgmtNebmF3DlRg+ePBvGxvVpVKWTxMyL5qeSBAAKAJDNMSfiVgjBfhByZWo1V62toPLSErTt34PjXZcwMPiCJz7kOOa5bC1bZHP8B5BKEkAOiKwxBudPddD+xgb0Dgzxsc5uTM18xmT2I0WUglLKMNsIUklCdrKQrOxgCHCOhJJsGQODL82LV6N88tw1jL/NwnUcikWjVioJCKUAfFrUFAXJW9+4zomqMyAcDLWFo4TW2gjHUUJrwyQkEQC29k6gbVd+/HHmvyQCwMrapn1QqouZ64kAa01AJBXYThjLR+dHHvUVz8uiNwEgfzYz4U+vvO2VxaYA3kYyUgJYwNiDcyP9fQXfeDlA0VHljD8z8Vwk1twXUnhgrrMSF4LpzJfCwfEyuv/qN3xFbXN9rKapYrmhX6ctKaY0v8N1AAAAAElFTkSuQmCC" alt="DeepL - Translator">
+                    </div>
+                </a>
+                <a href="https://cobalt.tools/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABpklEQVQ4ja1TO6oqQRSs022qKCMKBuJkbkBMjIz9gGDmB3EPwkSuShcgCNcPohhMqJHuQBOn6wb2zOvr40XvHmi6qTPVnKquAYAqgC8ABkBkdzo7P7D4my/LxdY2X7bhLvcCd70svhF7iEREAQBJ2BIRgYMlDVsGgFb2oEiCJLTWACBvXoLRYm7F3PdYlUqFnucZABQRo5Si7/vM5XKJDKXUpx9GKaUEgDQaDR4OB5lMJiQpxhg0m02cTicMh0MAEGMM5V3xRJJMICLs9/vmeDxyt9ux2+0SAHu9Hs/nMzebDdvt9l8TwHGaAKiU4ng85na75XK5ZLlcZiqV4nQ65X6/52KxYLVapZVKhU9rjUEYhng8HqjX6yiVSni9XgjDEM/nE7VaDYVCIX4m/JDQ6XTMarXi9XrlfD6n53lstVpcr9e8XC4MgoDpdPqnBOssB4OBud/vDILAZLNZAuBoNOLtduNsNmMmk0n0i4gbsj/PWCwWk9u11vR9n/l8ni72aaLYbCch0VojiqI4oWIxOphb/JUobwFoksYhw43yv8gAdvjf3/kbh4ApPVtKCj4AAAAASUVORK5CYII=" alt="кобальт">
+                    </div>
+                </a>
+                <a href="https://coolors.co/">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACOklEQVQ4jZ2Tu2tUYRTEf+fbu5tsstGoEV+JIiqoEARRRBFCUNBGKwt7i2hhITa2NoJ/QRSjRSxFUMHKIsEEQQIqpLAQoxg0yiZKQh6be+93xsJdiK9CB04z58xpZgYASUYdS5l60qhBxfyTlEueSx4/plGDmdTTuFupaRCVPFe/PJUkLUZpYs79/bzXGUlZpjyqvyq1NXT249N0JarjYcHonZyTXx/GH3/1MBUwymL7FtOZ9fjlHSG0BwuCIYPTwIIB5FH9hcD5kTcsn73npU+zQKdgFVAG1ggEe3eiB12FbFfRmiLcSMwu2FKmo80JQ+9m4NBVQrXVrdhmylpioKX+YCNqLkFtvdPdEjSyteCrghGhNxSMPiC59khUp7FSxcgWZce6gu70Bt08ErSvBaulkCTG+KLs+ZIwSAz6UEw/zy/LN1zyaOfcuRL95N1cMY+SXFLUTOp+eCwV46l3T2Rezb2xnEwIYcOHaTQ9j6nww5m+g8gKWC0XwYy1RdmT/YnGa7C7CdoDQSCDTYE/wMxAP3MBKBoE+5V3/7K1AzoqyKIAcWvMDUFzYpQK4ltmOv4itwNvc3omIzOO1/VTIVPxSWsJO9WNa9EoVYzHr00nHqDBt9LtCXRsLNqzb6akBK8WxMua3MAiDP/FxqCsnAda/2Bj2Xi6LYmrGzaWizYanYHt60juXyTb3AbZrBuJiab6ALVl2NMcdL8zSduDJQ4DRbPRepRpjeLR/0R5ZZna/qdMv1XzX+v8HXujroOEYhUpAAAAAElFTkSuQmCC" alt="Coolors - Pallete generator">
+                    </div>
+                </a>
+                <a href="https://realtimecolors.com/">
+                    <div class="button fav">
+                        <img src="https://www.realtimecolors.com/favicon.png" alt="">
+                    </div>
+                </a>
+                <a href="https://devina.io/unicode-analyser">
+                    <div class="button fav">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACDElEQVQ4jaVTPUsjURQ9942FQ9JoY7+L6VKJaOf8iGUdgqUEUlgKlimj2NjkLxiwtk1SKGiTyiJv1i12ZArBaCUz4rvvbLF54i7biKe991zeOx8AAJLfSE69915VPUl67/kv5jMlaUlu4x25nJN0vshwxDlH59zbwbBDsiK5LSRvAXwl6URk4fT0FJeXlyQpcRxjcXERIoKHhwdubW1Jmqbw3qsxJgLwCyTDs721lp1Ox9/c3HBvb4+TyYTT6ZTWWuZ5zt3dXZ9lGd9xKP4PJIoi7O/vs9Vqyd3dHS4uLtBsNuGcw2w2w9raGur1Os7Oznh0dCSqCmMMF0giiiKMx2PW63VZWVnBcDhEr9cDSYgIXl9fcXJygp2dHdRqNRmPx0ySRLz3gKqyqiq2223mec5+v09rbVD9TVBrLfv9PvM8Z7vdZlVVVFUaYwwGgwE2Nzfx+PiIOI7RaDSgqhARiAhUFY1GA3Ec4+npCRsbGxgMBjDGwOCTMN57pGmKq6srLC8voyxLZFmGKIpAEkGjLMtQliWWlpZwfX2NuZ1AsGM0Gvlut8uiKHh8fExVpXOOQaPDw0MWRcFut8vRaORDMhfCH5MkkfPzc97f38vq6ioODg7+snF9fR1FUeD5+ZlJkgQb8fkgkfwJ4EuI5wejnIPk93kxPlqmF5Kt0MiU5A+SGhb+V+f5TEneBvJvXmCCb2TuUewAAAAASUVORK5CYII=" alt="Unicode analyser - Devina.io">
+                    </div>
+                </a>
+            </div>
+
+            <div class="window-subcontent" aria-labelledby="Credits">
+                <p>Прочее</p>
+                <a href="https://macestudios.ru/">
+                    <div class="button fav">
+                        <img src="https://macestudios.ru/assets/logo/IconCircle.svg" alt="">
+                    </div>
+                </a>
+            </div> -->
+            
+            <!-- Template:
+            <a href="">
+                <div class="button fav" style="background-color: #000000;">
+                    <p>-</p>
+                </div>
+            </a>
+            -->
+
+        </div>
+
+    </div>
+
+    <img src="assets/waves2.svg" alt="Wavy Background" draggable="false" class="waves-bg">
+
+</body>
+
+</html>

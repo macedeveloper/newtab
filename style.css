@@ -1,0 +1,157 @@
+:root {
+    --bg-main: #1d1e25;
+    --bg-box: #fff1;
+    --bg-border: #fff1;
+}
+
+* {
+    user-select: none;
+    font-family: "Inter", serif;
+    font-size: 22px;
+    border-radius: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--bg-main);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    /* cursor: url(assets/cursor.svg), auto; */
+}
+
+
+.window {
+    background-color: var(--bg-box);
+    border: 2px solid var(--bg-border);
+    border-radius: 12px;
+
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+
+    width: 640px;
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.window-title {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+}
+.window-title .title {
+    text-align: left;
+    margin: 0;
+}
+.window-title .buttons {
+    margin: 0;
+}
+
+.window-content {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+.window-subcontent {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 12px;
+}
+.window-subcontent p {
+    margin: auto 0;
+    color: white;
+    font-size: 24px;
+    width: 200px;
+    text-align: left;
+}
+
+
+h1 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 700;
+}
+p {
+    color: #ccc; /* Light gray for better readability */
+    font-size: 18px;
+}
+
+
+button, .button {
+    min-width: 150px;
+    margin: 15px;
+    padding: 12px 12px;
+
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: #4951ff;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+}
+button:hover, .button:hover {
+    /* background-color: #1e1f22; */
+    /* box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.5); */
+    box-shadow: 0px 8px 0px #0005;
+    outline: white 2px;
+}
+
+.custom-icon {
+    border-radius: 0px;
+    height: 1em;
+    vertical-align: -.125em;
+}
+
+.waves-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.fav {
+    min-width: 16px;
+    height: 16px;
+    display: block;
+    background-color: #3a3b41;
+    border-radius: .2em;
+    margin: 0;
+    padding: 8px;
+    font-size: 16px;
+}
+.fav:hover {
+    filter: brightness(50%);
+    box-shadow: none;
+    outline: white 2px;
+}
+.fav * {
+    position: relative;
+    color: white;
+    margin: auto;
+    padding: 0;
+    height: 16px;
+}

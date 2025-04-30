@@ -1,0 +1,70 @@
+{
+    "Соц. сети": [
+        {
+            "link": "https://www.youtube.com/",
+            "imgsrc": "https://www.youtube.com/s/desktop/51fb42b8/img/logos/favicon.ico"
+        },
+        {
+            "link": "https://music.youtube.com/",
+            "imgsrc": "https://music.youtube.com/favicon.ico"
+        }
+    ],
+    "Сервисы": [
+        {
+            "link": "https://mail.google.com/mail/u/0/",
+            "imgsrc": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
+        },
+        {
+            "link": "https://drive.google.com/drive/u/0/my-drive/",
+            "imgsrc": "https://drive.google.com/favicon.ico"
+        },
+        {
+            "link": "https://www.perplexity.ai/",
+            "imgsrc": "https://www.perplexity.ai/favicon.ico"
+        },
+        {
+            "link": "https://chat.deepseek.com/",
+            "imgsrc": "https://cdn.deepseek.com/chat/icon.png"
+        },
+        {
+            "link": "https://rutracker.org/forum/index.php",
+            "imgsrc": "https://rutracker.org/favicon.ico"
+        },
+        {
+            "link": "https://freesound.org/",
+            "imgsrc": "https://freesound.org/favicon.ico"
+        },
+        {
+            "link": "https://filegarden.com/",
+            "imgsrc": "https://filegarden.com/images/icon.png"
+        }
+    ],
+    "Инструменты": [
+        {
+            "link": "https://www.deepl.com/ru/translator/",
+            "imgsrc": "https://www.deepl.com/img/favicon/favicon_16.png"
+        },
+        {
+            "link": "https://cobalt.tools/",
+            "imgsrc": "https://cobalt.tools/favicon.png"
+        },
+        {
+            "link": "https://coolors.co/",
+            "imgsrc": "https://coolors.co/assets/img/favicon.png"
+        },
+        {
+            "link": "https://realtimecolors.com/",
+            "imgsrc": "https://www.realtimecolors.com/favicon.png"
+        },
+        {
+            "link": "https://devina.io/unicode-analyser",
+            "imgsrc": "https://devina.io/apple-touch-icon.png"
+        }
+    ],
+    "Прочее": [
+        {
+            "link": "https://macestudios.ru/",
+            "imgsrc": "https://macestudios.ru/assets/logo/IconCircle.svg"
+        }
+    ]
+}
