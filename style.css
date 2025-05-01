@@ -134,14 +134,14 @@ a {
 }
 
 .fav {
-    min-width: 16px;
-    height: 24px;
+    min-width: 20px;
+    height: 20px;
     display: block;
     background-color: #3a3b41;
     border-radius: .2em;
     margin: 0;
     padding: 8px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .fav:hover {
     filter: brightness(50%);
@@ -153,5 +153,5 @@ a {
     color: white;
     margin: auto;
     padding: 0;
-    height: 24px;
+    height: 20px;
 }
