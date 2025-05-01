@@ -2,11 +2,11 @@
     "Соц. сети": [
         {
             "link": "https://www.youtube.com/",
-            "imgsrc": "https://www.youtube.com/s/desktop/51fb42b8/img/logos/favicon.ico"
+            "imgsrc": "icons/yt.png"
         },
         {
             "link": "https://music.youtube.com/",
-            "imgsrc": "https://music.youtube.com/favicon.ico"
+            "imgsrc": "icons/ytm.png"
         }
     ],
     "Сервисы": [
@@ -42,7 +42,7 @@
     "Инструменты": [
         {
             "link": "https://www.deepl.com/ru/translator/",
-            "imgsrc": "https://www.deepl.com/img/favicon/favicon_16.png"
+            "imgsrc": "icons/deepl.png"
         },
         {
             "link": "https://cobalt.tools/",
@@ -59,9 +59,7 @@
         {
             "link": "https://devina.io/unicode-analyser",
             "imgsrc": "https://devina.io/apple-touch-icon.png"
-        }
-    ],
-    "Прочее": [
+        },
         {
             "link": "https://macestudios.ru/",
             "imgsrc": "https://macestudios.ru/assets/logo/IconCircle.svg"
