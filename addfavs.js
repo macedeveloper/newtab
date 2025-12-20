@@ -1,3 +1,6 @@
+// this js code is AI-generated
+// i am sorry
+
 // Fetch the favs.json file
 fetch('favs.json')
     .then(response => response.json())
