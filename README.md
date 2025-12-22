@@ -1,24 +1,21 @@
 ## `favs.json` example:
+
 ```json
 {
-    "Social Networks": [
+    "Category 1": [
         {
-            "link": "https://pelmeni.com/",
-            "imgsrc": "https://pelmeni.com/assets/pelmeni.jpeg"
+            "link": "https://example.com/",
+            "imgsrc": "https://example.com/favicon.png"
         },
         {
-            "link": "https://chat.truesoft/",
-            "imgsrc": "https://truesoft.kb/assets/icon.png"
+            "link": "https://another.example.com/",
+            "imgsrc": "https://example.com/icon.ico"
         }
     ],
-    "Tools": [
+    "Category 2": [
         {
-            "link": "https://tool.edit/",
-            "imgsrc": "https://tool.com/branding/icon.svg"
-        },
-        {
-            "link": "https://photo.edit/",
-            "imgsrc": "https://photo.edit/favicon.png"
+            "link": "https://example.com/",
+            "imgsrc": "https://example.com/favicon.png"
         }
     ]
 }
