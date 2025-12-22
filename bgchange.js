@@ -10,6 +10,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (isHolidaySeason) {
         bgImage.src = "assets/waves-snow.svg";
-        console.log("Holiday background applied.");
     }
 });

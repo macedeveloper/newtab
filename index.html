@@ -19,11 +19,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
 
-    <!-- Scripts -->
+    <!-- Styles -->
     <link href="style.css" rel="stylesheet">
-    <script src="addfavs.js"></script>
-    <script src="bgchange.js"></script>
 </head>
 
 <body>
@@ -31,8 +32,26 @@
     <div class="window" id="window">
 
         <div class="window-title">
+            <!-- <h1 class="title">Здравствуйте, <span style="color: #6169ff; text-decoration: underline; font-size: 40px;">Mace Dev</span>  !</h1> -->
             <h1 class="title">Новая вкладка</h1>
             <img class="buttons" src="assets/window-buttons.svg" height="36px" draggable="false">
+        </div>
+
+        <div style="display: flex; flex-direction: row; align-items: bottom; justify-content: center;">
+            <p id="time_display" style="user-select: none; font-size: 64px; color: white; margin: 8px 8px; "> 00:00 </p>
+            <p id="time_display_sec" style="user-select: none; font-size: 24px; color: #d4d6fb88; margin: 8px 8px; "> 00 </p>
+        </div>
+
+        <div style="display: flex; flex-direction: row;">
+            <input role="combobox" autocomplete="off" id="searchbox_input" placeholder="Введите запрос или URL"
+                minlength="1" type="text" style="flex-grow: 1;">
+            </input>
+            <button id="searchbox_clear">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <button id="searchbox_button">
+                <i class="bi bi-search"></i>
+            </button>
         </div>
 
         <div class="window-content" id="window-content">
@@ -50,6 +69,11 @@
     </div>
 
     <img id="background" src="assets/waves.svg" alt="Wavy Background" draggable="false" class="waves-bg">
+
+    <script src="addfavs.js"></script>
+    <script src="time.js"></script>
+    <script src="search.js"></script>
+    <script src="bgchange.js"></script>
 
 </body>
 

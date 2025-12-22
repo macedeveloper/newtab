@@ -1,5 +1,4 @@
-// this js code is AI-generated
-// i am sorry
+// this js code is AI-generated, i am sorry i'm not really good at JS rn
 
 // Fetch the favs.json file
 fetch('favs.json')

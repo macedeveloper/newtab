@@ -5,8 +5,9 @@
 }
 
 * {
-    user-select: none;
-    font-family: "Inter", serif;
+    /* user-select: none; */
+    /* font-family: "Inter", serif; */
+    font-family: "Google Sans", sans-serif;
     font-size: 22px;
     border-radius: 0;
 }
@@ -20,8 +21,6 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    /* cursor: url(assets/cursor.svg), auto; */
 }
 
 
@@ -34,7 +33,7 @@ body {
     text-align: center;
     margin: 10px;
 
-    width: 640px;
+    width: 800px;
     position: relative;
     z-index: 1;
 
@@ -46,7 +45,7 @@ body {
 .window-title {
     padding: 10px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 .window-title .title {
     text-align: left;
@@ -54,6 +53,7 @@ body {
 }
 .window-title .buttons {
     margin: 0;
+    user-select: none;
 }
 
 .window-content {
@@ -75,7 +75,7 @@ body {
     margin: auto 0;
     color: white;
     font-size: 24px;
-    width: 200px;
+    width: 160px;
     text-align: left;
 }
 
@@ -92,7 +92,7 @@ p {
 }
 
 
-button, .button {
+.button {
     min-width: 150px;
     margin: 15px;
     padding: 12px 12px;
@@ -107,7 +107,7 @@ button, .button {
     cursor: pointer;
     transition: 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
 }
-button:hover, .button:hover {
+.button:hover {
     /* background-color: #1e1f22; */
     /* box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.5); */
     box-shadow: 0px 8px 0px #0005;
@@ -126,11 +126,11 @@ button:hover, .button:hover {
     left: 0;
     width: 100%;
     height: auto;
+    user-select: none;
 }
 
 a {
     text-decoration: none;
-
 }
 
 .fav {
@@ -138,13 +138,15 @@ a {
     height: 20px;
     display: block;
     background-color: #3a3b41;
-    border-radius: .2em;
+    border-radius: 4px;
     margin: 0;
     padding: 8px;
     font-size: 20px;
+    user-select: none;
 }
 .fav:hover {
-    filter: brightness(50%);
+    /* filter: brightness(50%); */
+    background-color: #1c1c20;
     box-shadow: none;
     outline: white 2px;
 }
@@ -154,4 +156,40 @@ a {
     margin: auto;
     padding: 0;
     height: 20px;
+    border-radius: 3px;
+}
+
+
+#searchbox_input {
+    background: #3a3b41;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin: 4px 8px;
+    padding: 4px 12px;
+    font-size: 22px;
+    outline: none;
+    transition: 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+}
+#searchbox_input:hover, #searchbox_input:focus {
+    background: #1c1c20;
+}
+
+#searchbox_button,
+#searchbox_clear {
+    background: #3a3b41;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin: 4px 8px;
+    padding: 4px 12px;
+    font-size: 22px;
+    outline: none;
+    transition: 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+
+}
+#searchbox_button:hover, #searchbox_button:focus,
+#searchbox_clear:hover, #searchbox_clear:focus {
+    background: #1c1c20;
+    cursor: pointer;
 }
