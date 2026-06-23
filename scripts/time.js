@@ -4,8 +4,8 @@ function updateTime() {
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
     document.getElementById('time_display').textContent = `${hours}:${minutes}`;
-    document.getElementById('time_display_sec').textContent = seconds;
+    document.getElementById('time_display_sec').textContent = `:${seconds}`;
 }
 
 updateTime(); // First tick
-setInterval(updateTime, 1000); // Every second
+setInterval(updateTime, 250); // Every second
