@@ -16,12 +16,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link href="style.css" rel="stylesheet">
@@ -31,18 +26,20 @@
 
     <div class="window" id="window">
 
+        <!-- Title -->
         <div class="window-title">
-            <!-- <h1 class="title">Здравствуйте, <span style="color: #6169ff; text-decoration: underline; font-size: 40px;">Mace Dev</span>  !</h1> -->
             <h1 class="title">Новая вкладка</h1>
-            <img class="buttons" src="assets/window-buttons.svg" height="36px" draggable="false">
+            <img class="window-buttons" src="assets/window-buttons.svg" height="36px" draggable="false">
         </div>
-
+        
+        <!-- Time -->
         <div style="display: flex; flex-direction: row; align-items: bottom; justify-content: center;">
-            <p id="time_display" style="user-select: none; font-size: 64px; color: white; margin: 8px 8px; "> 00:00 </p>
-            <p id="time_display_sec" style="user-select: none; font-size: 24px; color: #d4d6fb88; margin: 8px 8px; "> 00 </p>
+            <p id="time_display" style="user-select: none; font-weight: 100; font-size: 64px; color: white; margin: 0; "> 00:00 </p>
+            <p id="time_display_sec" style="user-select: none; font-weight: 400; font-size: 24px; color: #d4d6fb88; margin: 0; margin-top: 11px;"> :00 </p>
         </div>
-
-        <div style="display: flex; flex-direction: row;">
+        
+        <!-- Search -->
+        <div class="window-search-div">
             <input role="combobox" autocomplete="off" id="searchbox_input" placeholder="Введите запрос или URL"
                 minlength="1" type="text" style="flex-grow: 1;">
             </input>
@@ -53,27 +50,18 @@
                 <i class="bi bi-search"></i>
             </button>
         </div>
-
+        
+        <!-- Favs -->
         <div class="window-content" id="window-content">
-
-            <!-- Template:
-            <a href="">
-                <div class="button fav" style="background-color: #000000;">
-                    <p>-</p>
-                </div>
-            </a>
-            -->
-
+            
         </div>
 
     </div>
 
-    <img id="background" src="assets/waves.svg" alt="Wavy Background" draggable="false" class="waves-bg">
-
     <script src="scripts/addfavs.js"></script>
     <script src="scripts/time.js"></script>
     <script src="scripts/search.js"></script>
-    <script src="scripts/bgchange.js"></script>
+    <!-- <script src="scripts/bgchange.js"></script> -->
 
 </body>
 

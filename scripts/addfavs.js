@@ -1,4 +1,4 @@
-// this js code is AI-generated, i am sorry i'm not really good at JS rn
+// Disclaimer: this js code is AI-generated, i am sorry i'm not really good at JS :(
 
 // Fetch the favs.json file
 fetch('favs.json')
@@ -12,11 +12,6 @@ fetch('favs.json')
             const subContentDiv = document.createElement('div');
             subContentDiv.className = 'window-subcontent';
 
-            // Create the category title paragraph
-            const categoryTitle = document.createElement('p');
-            categoryTitle.textContent = categoryName;
-            subContentDiv.appendChild(categoryTitle);
-
             // Create links for each favorite in the category
             favorites.forEach(fav => {
                 const link = document.createElement('a');
@@ -28,7 +23,11 @@ fetch('favs.json')
                 const img = document.createElement('img');
                 img.src = fav.imgsrc;
 
+                const favName = document.createElement('p');
+                favName.textContent = fav.name;
+
                 buttonDiv.appendChild(img);
+                buttonDiv.appendChild(favName);
                 link.appendChild(buttonDiv);
                 subContentDiv.appendChild(link);
             });

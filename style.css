@@ -6,8 +6,8 @@
 
 * {
     /* user-select: none; */
-    /* font-family: "Inter", serif; */
-    font-family: "Google Sans", sans-serif;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
     font-size: 22px;
     border-radius: 0;
 }
@@ -17,21 +17,27 @@ body {
     height: 100vh;
     background-color: var(--bg-main);
 
+    background-image: url(assets/bg-default.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-
 .window {
-    background-color: var(--bg-box);
-    border: 2px solid var(--bg-border);
-    border-radius: 12px;
+    background-color: #20202066;
+    outline: 2px solid #88888840;
+    outline-offset: -2px;
+    border-radius: 24px;
+    corner-shape: superellipse(1.5);
 
-    padding: 15px;
+    padding: 24px;
     text-align: center;
-    margin: 10px;
+    margin: 36px;
 
     width: 800px;
     position: relative;
@@ -42,158 +48,136 @@ body {
 }
 
 
+
+
 .window-title {
-    padding: 10px;
+    padding: 8px 12px;
     display: flex;
     justify-content: space-between;
 }
 .window-title .title {
     text-align: left;
     margin: 0;
+
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
 }
-.window-title .buttons {
+.window-title .window-buttons {
     margin: 0;
     user-select: none;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
+
+
+
+.window-search-div {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 12px;
+    font-size: 20px;
+    font-weight: 400;
+    gap: 8px;
+}
+
+#searchbox_input {
+    background: #18181C80;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 10px;
+    transition: 0.2s ease;
+    border-radius: 8px;
+    outline: 2px solid #88888840;
+    outline-offset: -2px;
+}
+#searchbox_input:hover, #searchbox_input:focus {
+    background: #101013;
+}
+
+#searchbox_button,
+#searchbox_clear {
+    background: #18181C80;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 10px;
+    transition: 0.2s ease;
+    border-radius: 8px;
+    outline: 2px solid #88888840;
+    outline-offset: -2px;
+}
+#searchbox_button:hover, #searchbox_button:focus,
+#searchbox_clear:hover, #searchbox_clear:focus {
+    background: #101013;
+    cursor: pointer;
+}
+
+
+
+
 .window-content {
-    padding: 10px;
+    padding: 24px;
+    width: calc(72px * 8);
+    margin: auto;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 2px;
+    gap: 0px;
+    
 }
 .window-subcontent {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex-grow: 1;
-    gap: 2px;
-}
-.window-subcontent p {
-    margin: auto 0;
-    color: white;
-    font-size: 24px;
-    width: 160px;
-    text-align: left;
+    gap: 0px;
 }
 
 
-h1 {
-    color: white;
-    margin-bottom: 15px;
-    font-size: 40px;
-    font-weight: 700;
-}
-p {
-    color: #ccc; /* Light gray for better readability */
-    font-size: 18px;
-}
 
-
-/* .button {
-    min-width: 150px;
-    margin: 15px;
-    padding: 12px 12px;
-
-    font-size: 24px;
-    border: none;
-    border-radius: 10px;
-
-    background-color: #4951ff;
-    color: white;
-
-    cursor: pointer;
-    transition: background-color 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
-    transition: outline-color 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
-}
-.button:hover {
-    box-shadow: 0px 8px 0px #0005;
-    outline: white 2px;
-} */
-
-/* .custom-icon {
-    border-radius: 0px;
-    height: 1em;
-    vertical-align: -.125em;
-} */
-
-.waves-bg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    user-select: none;
-}
 
 a {
     text-decoration: none;
 }
-
 .fav {
-    width: 60px;
-    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #3a3b41;
-    border-radius: 4px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: none;
+    width: 72px;
+    height: 72px;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 12px;
+    line-height: 12px;
     user-select: none;
-    outline: 2px solid #fff0;
-    outline-offset: -2px;
     transition: 0.2s ease;
+    box-sizing: border-box;
 }
 .fav:hover {
-    /* filter: brightness(50%); */
-    background-color: #1c1c20;
-    outline: 2px solid #fff5;
-    outline-offset: -2px;
+    /* filter: brightness(150%); */
+    border-radius: 4px;
+    background-color: #fff1;
 }
-.fav * {
+.fav img {
     position: relative;
     color: white;
-    margin: auto;
+    margin: 8px auto 4px auto;
     padding: 0;
-    height: 24px;
+    height: 32px;
     border-radius: 3px;
 }
-
-
-#searchbox_input {
-    background: #3a3b41;
-    border: none;
+.fav p {
+    position: relative;
     color: white;
-    border-radius: 4px;
-    margin: 4px 8px;
-    padding: 4px 12px;
-    font-size: 22px;
-    outline: none;
-    transition: 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
-}
-#searchbox_input:hover, #searchbox_input:focus {
-    background: #1c1c20;
-}
-
-#searchbox_button,
-#searchbox_clear {
-    background: #3a3b41;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    margin: 4px 8px;
-    padding: 4px 12px;
-    font-size: 22px;
-    outline: none;
-    transition: 0.4s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
-
-}
-#searchbox_button:hover, #searchbox_button:focus,
-#searchbox_clear:hover, #searchbox_clear:focus {
-    background: #1c1c20;
-    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 auto auto auto;
+    padding: 0;
 }
