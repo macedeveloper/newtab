@@ -1,8 +1,9 @@
 const input = document.getElementById('searchbox_input');
-const button = document.getElementById('searchbox_button');
+const button = document.getElementById('searchbox_go');
 const clearButton = document.getElementById('searchbox_clear');
 
 button.addEventListener('click', search);
+
 input.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') search();
 });
