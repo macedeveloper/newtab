@@ -33,7 +33,6 @@ body {
 
 .window {
     /* background-color: #00000075; */
-    /* background-image: url(assets/noise.png); */
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.0328), rgba(255, 255, 255, 0.0328)),
                 url(assets/noise.png),
                 linear-gradient(0deg, rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 0.5)),
@@ -183,7 +182,7 @@ body {
     flex-grow: 0;
     flex-shrink: 0;
     gap: 0px;
-    transition: transform 0.08s cubic-bezier(0, 0, 0, 1);
+    transition: transform 0.08s cubic-bezier(0.22, 0.56, 0.45, 1.23);
 }
 .window-page {
     display: flex;
@@ -277,6 +276,7 @@ a {
     padding: 0;
     height: 32px;
     border-radius: 4px;
+    filter: drop-shadow(0px 1px 2px #00000080);
 }
 .fav p {
     position: relative;
